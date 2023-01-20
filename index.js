@@ -7,7 +7,16 @@ var userClickedPattern = [];
 var started = false;
 // new variable level
 var level = 0;
+
 $(document).keypress(function () {
+    if (!started) {
+        $("h1").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+});
+
+$(document).on("tap",function(){
     if (!started) {
         $("h1").text("Level " + level);
         nextSequence();
