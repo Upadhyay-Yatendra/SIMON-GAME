@@ -1,11 +1,16 @@
+html{
+  height: 100vh;
+  width: 100vw;
+}
 body {
   text-align: center;
   background-color: #011F3F;
+  max-height: 100%;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 2vh;
   margin:  5%;
   color: #FEF2BF;
   line-height: 150%;
@@ -21,8 +26,8 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 10vh;
+  width: 10vh;
   border: 10px solid black;
   border-radius: 20%;
 }
