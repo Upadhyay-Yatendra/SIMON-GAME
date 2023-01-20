@@ -16,7 +16,7 @@ $(document).keypress(function () {
     }
 });
 
-$(document).on("tap",function(){
+document.addEventListener("touchstart",function(){
     if (!started) {
         $("h1").text("Level " + level);
         nextSequence();
